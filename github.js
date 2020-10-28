@@ -23,7 +23,7 @@ fetch('https://api.github.com/users/sschneeberg')
             name: githubData.name
         }
 
-        console.log(userObj);
+        // console.log(userObj);
 
         const newElem = createNewElement('p', userObj.name);
         container.appendChild(newElem);

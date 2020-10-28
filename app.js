@@ -43,6 +43,7 @@ function createPokemonCard(obj) {
     //make title
     const cardTitle = createNewElement('h5', obj.name.toUpperCase());
     cardTitle.classList.add('cardTitle');
+    cardTitle.style.background = obj.accent_color;
     const hp = createNewElement('span', obj.health);
     hp.style.float = 'right';
     cardTitle.appendChild(hp);
@@ -81,7 +82,7 @@ fetch('https://pokeapi.co/api/v2/pokemon/chikorita')
             move2: chikoritaData.moves[10].move.name,
             type: chikoritaData.types[0].type.name,
             color: 'yellowgreen',
-            accent_color: 'yellow'
+            accent_color: 'gold'
         }
 
         createPokemonCard(chikoritaObj);

@@ -3,7 +3,7 @@ fetch('https://api.spacexdata.com/v3/capsules')
         return response.json();
     })
     .then(spacexData => {
-        console.log(spacexData);
+        return spacexData;
     })
     .catch(error => {
         console.log(error);
@@ -13,7 +13,7 @@ fetch('https://api.spacexdata.com/v3/dragons')
         return response.json();
     })
     .then(spacexData => {
-        console.log(spacexData);
+        return spacexData;
     })
     .catch(error => {
         console.log(error);
@@ -23,7 +23,7 @@ fetch('https://api.spacexdata.com/v3/ships')
         return response.json();
     })
     .then(spacexData => {
-        console.log(spacexData);
+        return spacexData;
     })
     .catch(error => {
         console.log(error);
@@ -33,7 +33,7 @@ fetch('https://api.spacexdata.com/v3/landpads/LZ-4')
         return response.json();
     })
     .then(spacexData => {
-        console.log(spacexData);
+        return spacexData;
     })
     .catch(error => {
         console.log(error);
